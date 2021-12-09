@@ -25,7 +25,9 @@ public class Controller {
     private PasswordField passwordPf;
     @FXML
     private Button loginButton;
+    @FXML
     private Button nuMetenButton;
+    @FXML
     private Label luchtScore;
 
     @FXML
@@ -41,6 +43,8 @@ public class Controller {
     }
     @FXML
     void nuMetenHandler(ActionEvent event) throws Exception{
+
+
         String connectionString = "jdbc:mysql://localhost:3308/challenge";
         ResultSet resultSet = null;
 
