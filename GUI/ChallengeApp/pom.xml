@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>sample.challengeapp/sample.challengeapp.Main</mainClass>
+                            <mainClass>sample.challengeapp/challengeapp.Main</mainClass>
                         </configuration>
                     </execution>
                 </executions>

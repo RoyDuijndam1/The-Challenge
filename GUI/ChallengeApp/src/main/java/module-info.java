@@ -2,8 +2,9 @@ module sample.challengeapp {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
+    requires java.sql;
 
 
-    opens sample.challengeapp to javafx.fxml;
-    exports sample.challengeapp;
+    opens challengeapp to javafx.fxml;
+    exports challengeapp;
 }

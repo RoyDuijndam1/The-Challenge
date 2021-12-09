@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.Controller">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
          <children>
@@ -26,12 +26,17 @@
                   <Image url="@pictures/homescreenresoize%20(1).png" />
                </image>
             </ImageView>
-            <Button layoutX="-2.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: #FED700;" text="Nu meten">
+            <Button fx:id="nuMetenButton" layoutX="-2.0" layoutY="364.0" mnemonicParsing="false" onAction="#nuMetenHandler" style="-fx-background-color: #FED700;" text="Nu meten">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
             <Label layoutX="11.0" layoutY="161.0" prefHeight="22.0" prefWidth="78.0" text="Luchtkwaliteit" />
+            <Label fx:id="luchtScore" layoutX="36.0" layoutY="219.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
