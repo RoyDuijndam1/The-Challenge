@@ -16,6 +16,7 @@
     <Label text="Password" />
     <PasswordField />
 
+    <Label fx:id="welcomeText" />
     <Button mnemonicParsing="false" text="Login" />
     <Button mnemonicParsing="false" text="Register" />
 </VBox>
