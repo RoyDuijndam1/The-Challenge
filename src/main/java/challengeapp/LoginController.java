@@ -3,6 +3,7 @@ package challengeapp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -10,65 +11,51 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.sql.*;
+import java.util.Objects;
 
 public class LoginController {
     @FXML
     private Label loginLabel;
     @FXML
-    private Label usernameLabel;
+    private TextField usernameField;
     @FXML
-    private Label passwordLabel;
-    @FXML
-    private TextField usernameTf;
-    @FXML
-    private PasswordField passwordPf;
+    private PasswordField passwordField;
     @FXML
     private Button loginButton;
-    @FXML
-    private Button nuMetenButton;
-    @FXML
-    private Label luchtScore;
 
-    @FXML
-    void goToHome(ActionEvent event) throws Exception{
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("homeScreen.fxml"));
-            Parent root = loader.load();
-
-            Stage window = (Stage) loginButton.getScene().getWindow();
-            window.setScene(new Scene(root, 300, 600));
-        
-
-    }
-    @FXML
-    void nuMetenHandler(ActionEvent event) throws Exception{
+    public void loginButtonOnAction(ActionEvent event) throws IOException {
 
 
-        String connectionString = "jdbc:mysql://localhost:3308/challenge";
-        ResultSet resultSet = null;
+        if(usernameField.getText().isBlank() && passwordField.getText().isBlank()) {
+            loginLabel.setText("No input detected");
+        } else if(!Objects.equals(usernameField.getText(), "banaan")) {
+            loginLabel.setText("Username does not exist");
+        } else if(!Objects.equals(passwordField.getText(), "appel")) {
+            loginLabel.setText("Wrong password");
+        } else if(Objects.equals(usernameField.getText(), "banaan") && Objects.equals(passwordField.getText(), "appel")) {
+            switchToHome(event);
 
-        try (Connection connection = DriverManager.getConnection(connectionString, "root", "");
-             Statement statement = connection.createStatement();) {
-
-            // Create and execute a SELECT SQL statement.
-            String selectSql = "SELECT score from account WHERE `userID`= '33436ceb-2799-4de3-9e98-a5511a4de32f'";
-            resultSet = statement.executeQuery(selectSql);
-
-            // Print results from select statement
-            while (resultSet.next()) {
-                //System.out.println(resultSet.getString(8));
-                luchtScore.setText(resultSet.getString(1));
-                //System.out.println(resultSet);
-            }
         }
-        catch (SQLException er) {
-            er.printStackTrace();
-        }
-        //33436ceb-2799-4de3-9e98-a5511a4de32f
+
+        /*Stage stage = (Stage) loginButton.getScene().getWindow();
+        stage.close();*/
     }
 
+    public void switchToHome(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("homeScreen.fxml"));
+        stage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
+}
 
 
 
