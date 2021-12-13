@@ -12,7 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.sql.*;
 
-public class Controller {
+public class LoginController {
     @FXML
     private Label loginLabel;
     @FXML
