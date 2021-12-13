@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.Controller">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.HomeController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
          <children>
@@ -26,7 +26,7 @@
                   <Image url="@pictures/homescreenresoize%20(1).png" />
                </image>
             </ImageView>
-            <Button fx:id="nuMetenButton" layoutX="-2.0" layoutY="364.0" mnemonicParsing="false" onAction="#nuMetenHandler" style="-fx-background-color: #FED700;" text="Nu meten">
+            <Button fx:id="nuMetenButton" layoutX="-2.0" layoutY="364.0" mnemonicParsing="false" onAction="#nuMetenButtonOnAction" style="-fx-background-color: #FED700;" text="Nu meten">
                <font>
                   <Font size="18.0" />
                </font>
