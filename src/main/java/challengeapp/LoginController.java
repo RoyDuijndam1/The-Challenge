@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Objects;
 
-public class LoginController {
+public class LoginController extends SceneController{
     @FXML
     private Label loginLabel;
     @FXML
@@ -31,8 +31,6 @@ public class LoginController {
     private Parent root;
 
     public void loginButtonOnAction(ActionEvent event) throws IOException {
-
-
         if(usernameField.getText().isBlank() && passwordField.getText().isBlank()) {
             loginLabel.setText("No input detected");
         } else if(!Objects.equals(usernameField.getText(), "banaan")) {
@@ -40,21 +38,11 @@ public class LoginController {
         } else if(!Objects.equals(passwordField.getText(), "appel")) {
             loginLabel.setText("Wrong password");
         } else if(Objects.equals(usernameField.getText(), "banaan") && Objects.equals(passwordField.getText(), "appel")) {
-            switchToHome(event);
-
+            switchToHome(event, "home");
         }
 
-        /*Stage stage = (Stage) loginButton.getScene().getWindow();
-        stage.close();*/
     }
 
-    public void switchToHome(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("homeScreen.fxml"));
-        stage  = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
 }
 
 
