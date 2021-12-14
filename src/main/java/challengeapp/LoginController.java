@@ -26,11 +26,8 @@ public class LoginController extends SceneController{
     @FXML
     private Button loginButton;
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-
     public void loginButtonOnAction(ActionEvent event) throws IOException {
+
         if(usernameField.getText().isBlank() && passwordField.getText().isBlank()) {
             loginLabel.setText("No input detected");
         } else if(!Objects.equals(usernameField.getText(), "banaan")) {
