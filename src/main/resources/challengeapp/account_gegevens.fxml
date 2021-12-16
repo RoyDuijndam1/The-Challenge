@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="accountsgegevens">
          <font>
@@ -20,19 +20,19 @@
          </image></ImageView>
       <AnchorPane prefHeight="30.0" prefWidth="200.0" />
       <Label text="E-mailadres" />
-      <Label />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" />
       <Label text="Telefoonnummer" />
-      <Label />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" />
       <Label text="Adres" />
-      <Label />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" />
       <AnchorPane prefHeight="30.0" prefWidth="200.0" />
       <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" text="wachtwoord veranderen" />
       <AnchorPane prefHeight="10.0" prefWidth="200.0" />
       <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="verwijder account" textFill="#f20707" />
       <AnchorPane prefHeight="10.0" prefWidth="200.0" />
       <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="account bewerken" />
-      <AnchorPane prefHeight="46.0" prefWidth="200.0" />
-      <ToolBar prefHeight="40.0" prefWidth="200.0">
+      <AnchorPane prefHeight="30.0" prefWidth="200.0" />
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #808080;">
         <items>
             <AnchorPane prefHeight="30.0" prefWidth="20.0" />
             <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
