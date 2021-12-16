@@ -15,7 +15,7 @@
       <Button mnemonicParsing="false" text="terug" />
       <ImageView fitHeight="91.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../java/assets/UserIcon.png" />
+            <Image url="@pictures/UserIcon.png" />
          </image></ImageView>
       <Label text="E-mailadres" />
       <Label />
@@ -31,19 +31,19 @@
             <AnchorPane prefHeight="30.0" prefWidth="15.0" />
             <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/assets/medal-solid%20(1).png" />
+                  <Image url="@pictures/medal-solid%20(1).png" />
                </image>
             </ImageView>
             <AnchorPane prefHeight="30.0" prefWidth="5.0" />
             <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/assets/home-solid%20(4)%20(1).png" />
+                  <Image url="@pictures/home-solid%20(4)%20(1).png" />
                </image>
             </ImageView>
             <AnchorPane prefHeight="30.0" prefWidth="5.0" />
             <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../java/assets/user-solid%20(1).png" />
+                  <Image url="@pictures/user-solid%20(1).png" />
                </image>
             </ImageView>
             <AnchorPane prefHeight="30.0" prefWidth="15.0" />
