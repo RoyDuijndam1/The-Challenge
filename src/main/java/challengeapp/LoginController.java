@@ -17,6 +17,7 @@ import java.sql.*;
 import java.util.Objects;
 
 public class LoginController extends SceneController{
+
     @FXML
     private Label loginLabel;
     @FXML
