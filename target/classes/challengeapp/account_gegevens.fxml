@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="accountsgegevens">
          <font>
@@ -13,35 +13,41 @@
          </font>
       </Text>
       <Button mnemonicParsing="false" text="terug" />
-      <ImageView fitHeight="91.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+      <AnchorPane prefHeight="45.0" prefWidth="200.0" />
+      <ImageView fitHeight="115.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pictures/UserIcon.png" />
          </image></ImageView>
+      <AnchorPane prefHeight="30.0" prefWidth="200.0" />
       <Label text="E-mailadres" />
-      <Label />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" />
       <Label text="Telefoonnummer" />
-      <Label />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" />
       <Label text="Adres" />
-      <Label />
-      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" text="wachtwoord veranderen" />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="175.0" />
+      <AnchorPane prefHeight="30.0" prefWidth="200.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="146.0" text="wachtwoord wijzigen" />
+      <AnchorPane prefHeight="10.0" prefWidth="200.0" />
       <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="verwijder account" textFill="#f20707" />
+      <AnchorPane prefHeight="10.0" prefWidth="200.0" />
       <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="145.0" text="account bewerken" />
-      <ToolBar prefHeight="40.0" prefWidth="200.0">
+      <AnchorPane prefHeight="30.0" prefWidth="200.0" />
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #808080;">
         <items>
-            <AnchorPane prefHeight="30.0" prefWidth="15.0" />
-            <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+            <AnchorPane prefHeight="30.0" prefWidth="20.0" />
+            <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/medal-solid%20(1).png" />
                </image>
             </ImageView>
-            <AnchorPane prefHeight="30.0" prefWidth="5.0" />
-            <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+            <AnchorPane prefHeight="30.0" prefWidth="15.0" />
+            <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/home-solid%20(4)%20(1).png" />
                </image>
             </ImageView>
-            <AnchorPane prefHeight="30.0" prefWidth="5.0" />
-            <ImageView accessibleRole="BUTTON" fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+            <AnchorPane prefHeight="30.0" prefWidth="15.0" />
+            <ImageView accessibleRole="BUTTON" fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/user-solid%20(1).png" />
                </image>
