@@ -4,10 +4,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 
+import java.io.IOException;
 import java.sql.*;
 
-public class HomeController {
+public class HomeController extends SceneController{
     @FXML
     private Label luchtScore;
     @FXML
@@ -15,6 +17,7 @@ public class HomeController {
     @FXML
     void nuMetenButtonOnAction(ActionEvent event) {
         luchtScore.setText("100");
+
 
 //        String connectionString = "jdbc:mysql://localhost:3308/challenge";
 //        ResultSet resultSet = null;
@@ -35,5 +38,17 @@ public class HomeController {
 //        } catch (SQLException er) {
 //            er.printStackTrace();
 //        }
+    }
+
+    public void rankingButtonOnAction(MouseEvent event) throws IOException {
+        switchTo(event, "ranking");
+    }
+
+    public void homeButtonOnAction(MouseEvent event) throws IOException {
+        switchTo(event, "home");
+    }
+
+    public void profileButtonOnAction(MouseEvent event) throws IOException {
+        switchTo(event, "profile");
     }
 }

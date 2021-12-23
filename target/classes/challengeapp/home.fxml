@@ -12,7 +12,7 @@
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
          <children>
-            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="22.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="22.0" layoutY="530.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/rankingtekentjetop3resize.png" />
                </image>
@@ -21,7 +21,7 @@
       </AnchorPane>
       <AnchorPane prefHeight="600.0" prefWidth="146.0" style="-fx-background-color: #808080;">
          <children>
-            <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="19.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="19.0" layoutY="529.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/homescreenresoize%20(1).png" />
                </image>
@@ -41,7 +41,7 @@
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
          <children>
-            <ImageView fitHeight="88.0" fitWidth="44.0" layoutX="28.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="88.0" fitWidth="44.0" layoutX="28.0" layoutY="535.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/userscreenresize.png" />
                </image>

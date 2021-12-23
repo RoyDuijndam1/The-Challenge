@@ -18,9 +18,6 @@ public class Main extends Application {
         stage.setTitle("Envique");
         stage.setScene(new Scene(root,300,600));
         stage.show();
-
-
-
     }
 
     public static void main(String[] args) {

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.ProfileController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
       <AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #808080;">
@@ -25,17 +25,17 @@
             <Button layoutX="81.0" layoutY="174.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Accountgegevens" />
             <Button layoutX="81.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Metinggschiedenis" />
             <Button layoutX="81.0" layoutY="246.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Contact" />
-            <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="28.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="119.0" layoutY="536.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/homescreenresoize%20(1).png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="122.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="34.0" layoutY="536.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/rankingtekentjetop3resize.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="219.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="219.0" layoutY="536.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/userscreenresize.png" />
                </image>
