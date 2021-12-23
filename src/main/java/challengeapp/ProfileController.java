@@ -17,14 +17,15 @@ public class ProfileController extends SceneController{
     }
 
     public void accountGegevensOnAction(MouseEvent event) throws IOException {
-        switchTo(event, "account_gegevens");
+        switchTo(event, "account_data");
     }
 
     public void metingsGeschiedenisButtonOnAction(MouseEvent event) throws IOException {
-        switchTo(event, "metings_geschiedenis");
+        switchTo(event, "measurement_history");
     }
 
     public void contactButtonOnAction(MouseEvent event) throws IOException {
         switchTo(event, "contact");
+
     }
 }
