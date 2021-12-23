@@ -15,17 +15,17 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="117.0" layoutY="524.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="116.0" layoutY="524.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pictures/homescreenresoize%20(1).png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="35.0" layoutY="524.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="13.0" layoutY="524.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pictures/rankingtekentjetop3resize.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="214.0" layoutY="524.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="234.0" layoutY="524.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@pictures/userscreenresize.png" />
          </image>
@@ -56,7 +56,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextArea layoutX="110.0" layoutY="321.0" prefHeight="130.0" prefWidth="178.0" />
+      <TextArea layoutX="93.0" layoutY="321.0" prefHeight="130.0" prefWidth="195.0" />
       <Label layoutX="21.0" layoutY="321.0" text="Uw bericht:" />
       <Button layoutX="212.0" layoutY="457.0" mnemonicParsing="false" text="Verzenden" />
    </children>
