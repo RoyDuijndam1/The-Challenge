@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="200.0" prefWidth="290.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.WwVeranderen">
+<AnchorPane prefHeight="200.0" prefWidth="290.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.WwVeranderen">
    <children>
       <Text layoutX="53.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="wachtwoord wijzigen">
          <font>
             <Font size="20.0" />
          </font></Text>
-      <TextField alignment="CENTER" layoutX="72.0" layoutY="82.0" />
-      <ToolBar layoutX="43.0" layoutY="108.0" prefHeight="40.0" prefWidth="200.0">
+      <TextField alignment="CENTER" layoutX="61.0" layoutY="87.0" />
+      <ToolBar layoutX="52.0" layoutY="130.0" prefHeight="40.0" prefWidth="200.0">
         <items>
           <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="annuleren" />
             <AnchorPane prefHeight="26.0" prefWidth="8.0" />
