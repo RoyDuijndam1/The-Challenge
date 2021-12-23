@@ -24,9 +24,7 @@
             </Label>
             <Button layoutX="81.0" layoutY="174.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Accountgegevens" />
             <Button layoutX="81.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Metinggschiedenis" />
-            <Button layoutX="81.0" layoutY="246.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Zakelijk" />
-            <Button layoutX="81.0" layoutY="280.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Contact" />
-            <Button layoutX="81.0" layoutY="317.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Instellingen" />
+            <Button layoutX="81.0" layoutY="246.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Contact" />
             <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="28.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/homescreenresoize%20(1).png" />
@@ -42,7 +40,6 @@
                   <Image url="@pictures/userscreenresize.png" />
                </image>
             </ImageView>
-            <Button layoutX="129.0" layoutY="359.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="Button" />
          </children>
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
