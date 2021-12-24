@@ -10,43 +10,37 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.HomeController">
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" />
+      <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #808080;">
          <children>
-            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="22.0" layoutY="530.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="118.0" layoutY="529.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/homescreenresoize%20(1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="nuMetenButton" layoutX="98.0" layoutY="364.0" mnemonicParsing="false" onAction="#nuMetenButtonOnAction" style="-fx-background-color: #FED700;" text="Nu meten">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="110.0" layoutY="161.0" prefHeight="22.0" prefWidth="78.0" text="Luchtkwaliteit" />
+            <Label fx:id="luchtScore" layoutX="144.0" layoutY="218.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="88.0" fitWidth="44.0" layoutX="227.0" layoutY="532.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/userscreenresize.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="23.0" layoutY="529.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/rankingtekentjetop3resize.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="600.0" prefWidth="146.0" style="-fx-background-color: #808080;">
-         <children>
-            <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="19.0" layoutY="529.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@pictures/homescreenresoize%20(1).png" />
-               </image>
-            </ImageView>
-            <Button fx:id="nuMetenButton" layoutX="-2.0" layoutY="364.0" mnemonicParsing="false" onAction="#nuMetenButtonOnAction" style="-fx-background-color: #FED700;" text="Nu meten">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Label layoutX="11.0" layoutY="161.0" prefHeight="22.0" prefWidth="78.0" text="Luchtkwaliteit" />
-            <Label fx:id="luchtScore" layoutX="36.0" layoutY="219.0" text="0">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;">
-         <children>
-            <ImageView fitHeight="88.0" fitWidth="44.0" layoutX="28.0" layoutY="535.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@pictures/userscreenresize.png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" />
    </children>
 </HBox>

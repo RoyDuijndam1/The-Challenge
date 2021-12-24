@@ -14,6 +14,7 @@ import java.util.UUID;
 public class CMD_reader extends Main {
 
 //    private static String uuidAsString;
+    private static boolean sqlRun = false;//true = sensor aan. false = sensor uit
 
     public static String tail2(File file, int lines) {
         java.io.RandomAccessFile fileHandler = null;
@@ -85,12 +86,12 @@ public class CMD_reader extends Main {
     }
 
     public static void main (String[] args) {
-        int teller = 0;
+
         int[] values = new int[2];
         File file = new File("G:\\logs\\log.txt");
 
-        String array = tail2(file, 2);
-        String strArray[] = array.split("\\n");
+//        String array = tail2(file, 2);
+//        String strArray[] = array.split("\\n");
 ////        System.out.println(strArray);
 //        for (int i = 0; i < strArray.length; i++) {
 //            // Printing the elements of String array
@@ -101,20 +102,42 @@ public class CMD_reader extends Main {
 //            }
 //        }
 
-        for (int i = 0; i < strArray.length; i++) {
-            // Printing the elements of String array
-            System.out.print(strArray[i] + ", \n");
-
-            String temp[] = strArray[i].split(" ");
-            String temp2[] = temp[1].split("\\.");
-
-            System.out.println("after: "+Integer.valueOf(temp2[0]));
-            values[teller] = Integer.valueOf(temp2[0]);
-            teller++;
-        }
 
 
-        System.out.println(sqlFile.insertIntoDB(values[0], values[1]));
+
+        TimerTask timerTask = new TimerTask()
+        {
+            public void run()
+            {
+                if (sqlRun) {
+                    int teller = 0;
+
+                    String array = tail2(file, 2);
+                    String strArray[] = array.split("\\n");
+                    for (int i = 0; i < strArray.length; i++) {
+                        // Printing the elements of String array
+                        System.out.print(strArray[i] + ", \n");
+
+                        String temp[] = strArray[i].split(" ");
+                        String temp2[] = temp[1].split("\\.");
+
+//                        System.out.println("after: "+Integer.valueOf(temp2[0]));
+                        values[teller] = Integer.valueOf(temp2[0]);
+                        teller++;
+                    }
+
+//                    System.out.println(sqlFuncties.insertIntoDB(values[0], values[1]));
+                    sqlFuncties.insertIntoDB(values[0], values[1]);
+                }
+            }
+        };
+
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(timerTask, 0, 15000);
+
+//        timer.cancel();
+
+//        System.out.println(sqlFuncties.insertIntoDB(values[0], values[1]));
 //        System.out.println(insertIntoDB(values[0], values[1]));
     }
 }
