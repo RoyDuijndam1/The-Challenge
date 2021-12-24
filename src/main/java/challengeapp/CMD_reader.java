@@ -14,7 +14,7 @@ import java.util.UUID;
 public class CMD_reader extends Main {
 
 //    private static String uuidAsString;
-    private static boolean sqlRun = true;//true = sensor aan. false = sensor uit
+    private static boolean sqlRun = false;//true = sensor aan. false = sensor uit
 
     public static String tail2(File file, int lines) {
         java.io.RandomAccessFile fileHandler = null;
