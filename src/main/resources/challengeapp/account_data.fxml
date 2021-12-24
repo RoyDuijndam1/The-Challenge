@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,11 +15,16 @@
                 <Font size="36.0" />
             </font>
         </Label>
-        <ImageView fitHeight="116.0" fitWidth="103.0" layoutX="97.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="112.0" fitWidth="89.0" layoutX="106.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@pictures/UserIcon.png" />
             </image>
         </ImageView>
+        <Label layoutX="105.0" layoutY="192.0" text="Profielfoto wijzijgen">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
         <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="16.0" layoutY="524.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@pictures/rankingtekentjetop3resize.png" />
@@ -35,12 +41,12 @@
             </image>
         </ImageView>
         <Label layoutX="47.0" layoutY="233.0" text="Email:" />
-        <Label layoutX="45.0" layoutY="274.0" text="Telefoon:" />
-        <Label layoutX="46.0" layoutY="314.0" text="Woonplaats:" />
-        <Button layoutX="47.0" layoutY="424.0" mnemonicParsing="false" text="Verwijder account" textFill="#ff3806" />
-      <Button layoutX="46.0" layoutY="384.0" mnemonicParsing="false" text="Account bewerken" />
-      <Label layoutX="46.0" layoutY="251.0" text="persoon@test.nl" />
-      <Label layoutX="46.0" layoutY="293.0" text="0612345678" />
-      <Label layoutX="47.0" layoutY="332.0" text="Den Haag" />
+        <Label layoutX="45.0" layoutY="283.0" text="Telefoon:" />
+        <Label layoutX="46.0" layoutY="328.0" text="Adres:" />
+        <TextField layoutX="46.0" layoutY="250.0" prefHeight="26.0" prefWidth="230.0" />
+        <TextField layoutX="46.0" layoutY="300.0" prefHeight="26.0" prefWidth="230.0" />
+        <TextField layoutX="46.0" layoutY="345.0" prefHeight="26.0" prefWidth="230.0" />
+        <Button layoutX="45.0" layoutY="384.0" mnemonicParsing="false" text="Opslaan" />
+        <Button layoutX="44.0" layoutY="426.0" mnemonicParsing="false" text="Verwijder account" textFill="#ff3806" />
     </children>
 </AnchorPane>
