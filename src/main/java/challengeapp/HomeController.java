@@ -19,7 +19,7 @@ public class HomeController extends SceneController{
     private Button nuMetenButton;
     @FXML
     void nuMetenButtonOnAction(ActionEvent event) {
-        String connectionString = "jdbc:mysql://localhost:3308/challenge/account";
+        String connectionString = "jdbc:mysql://localhost:3306/challenge";
         ResultSet resultSet = null;
 
         try (Connection connection = DriverManager.getConnection(connectionString, "root", "");
