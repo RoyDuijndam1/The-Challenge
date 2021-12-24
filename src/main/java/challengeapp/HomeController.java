@@ -5,10 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
+
 import java.io.IOException;
 import java.sql.*;
 
@@ -19,7 +16,10 @@ public class HomeController extends SceneController{
     private Button nuMetenButton;
     @FXML
     void nuMetenButtonOnAction(ActionEvent event) {
-        String connectionString = "jdbc:mysql://localhost:3306/challenge";
+//        luchtScore.setText("100");
+
+
+        String connectionString = "jdbc:mysql://127.0.0.1:3306/challenge";
         ResultSet resultSet = null;
 
         try (Connection connection = DriverManager.getConnection(connectionString, "root", "");
@@ -39,7 +39,6 @@ public class HomeController extends SceneController{
             er.printStackTrace();
         }
     }
-
 
     public void rankingButtonOnAction(MouseEvent event) throws IOException {
         switchTo(event, "ranking");
