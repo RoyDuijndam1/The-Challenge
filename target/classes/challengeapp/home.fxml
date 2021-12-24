@@ -10,8 +10,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.HomeController">
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" />
-      <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #808080;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080;">
          <children>
             <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="118.0" layoutY="529.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -41,6 +40,5 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #808080;" />
    </children>
 </HBox>
