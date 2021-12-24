@@ -41,8 +41,6 @@ public class LoginController extends SceneController{
             } else {
                 String[] output = sqlFuncties.loginFetch(usernameField.getText(), passwordField.getText());
 
-                System.out.println(output[2]);
-
                 if (output[0] != null && output[1] != null && output[2] != null) {
                     if (output[2].equals(usernameField.getText())) {
                         switchToHome(event, "home");

@@ -3,7 +3,7 @@ package challengeapp;
 import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
-public class AccountDataController extends SceneController {
+public class AccountDeleteController extends SceneController {
     public void rankingButtonOnAction(MouseEvent event) throws IOException {
         switchTo(event, "ranking");
     }
@@ -16,9 +16,3 @@ public class AccountDataController extends SceneController {
         switchTo(event, "profile");
     }
 }
-
-//TODO: Terug knop weg done
-//TODO: Labels ipv textfields done
-//TODO: verwijder account confirmatie done
-//TODO: Account bewerken maken? done
-//TODO: Symbolen linken
