@@ -44,11 +44,11 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Line endX="196.99993896484375" endY="-1.52587890625E-5" layoutX="95.0" layoutY="135.0" startX="-95.00001525878906" startY="-1.52587890625E-5" />
+            <Line endX="205.0" endY="-1.52587890625E-5" layoutX="95.0" layoutY="135.0" startX="-95.00001525878906" startY="-1.52587890625E-5" />
             <Label layoutX="120.0" layoutY="143.0" text="Leaderbord" />
             <Button layoutX="25.0" layoutY="171.0" mnemonicParsing="false" text="Regionaal" />
             <Button layoutX="190.0" layoutY="171.0" mnemonicParsing="false" text="Nationaal" />
-            <Line endX="182.10000610351562" endY="-1.52587890625E-5" layoutX="107.0" layoutY="211.0" startX="-106.9999771118164" startY="-1.52587890625E-5" />
+            <Line endX="194.5999755859375" endY="-1.52587890625E-5" layoutX="107.0" layoutY="211.0" startX="-106.9999771118164" startY="-1.52587890625E-5" />
             <Label layoutX="43.0" layoutY="219.0" text="Rang:">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -91,15 +91,15 @@
                </font>
             </Label>
             <Line endX="177.19998168945312" layoutX="118.0" layoutY="315.0" startX="-117.9999771118164" />
-            <Line endX="189.49996948242188" endY="-7.79998779296875" layoutX="102.0" layoutY="379.0" startX="-101.9999771118164" startY="-7.79998779296875" />
+            <Line endX="193.99993896484375" endY="-7.79998779296875" layoutX="102.0" layoutY="379.0" startX="-101.9999771118164" startY="-7.79998779296875" />
             <Line endX="188.60000610351562" endY="-7.79998779296875" layoutX="105.0" layoutY="434.0" startX="-104.9999771118164" startY="-7.79998779296875" />
             <Label layoutX="23.0" layoutY="441.0" text="4th">
                <font>
                   <Font name="System Bold Italic" size="11.0" />
                </font>
             </Label>
-            <Line endX="182.30001831054688" endY="-7.79998779296875" layoutX="110.0" layoutY="470.0" startX="-109.9999771118164" startY="-7.79998779296875" />
-            <Line endX="176.69998168945312" endY="-7.79998779296875" layoutX="110.0" layoutY="504.0" startX="-109.9999771118164" startY="-7.79998779296875" />
+            <Line endX="185.99996948242188" endY="-7.79998779296875" layoutX="110.0" layoutY="470.0" startX="-109.9999771118164" startY="-7.79998779296875" />
+            <Line endX="185.99996948242188" endY="-7.79998779296875" layoutX="110.0" layoutY="504.0" startX="-109.9999771118164" startY="-7.79998779296875" />
             <Label layoutX="23.0" layoutY="475.0" text="5th">
                <font>
                   <Font name="System Bold Italic" size="11.0" />
