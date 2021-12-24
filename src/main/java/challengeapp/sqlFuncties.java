@@ -37,7 +37,7 @@ public class sqlFuncties {
 
             // Create and execute a SELECT SQL statement.
             String selectSql = "INSERT INTO `meting`(`metingID`, `TVOC`, `CO2 waarde`, `Datum meting`, `UserID`) VALUES ('"+uuid+"',"+tvoc+","+eco2+",'"+dateFormat+"','33436ceb-2799-4de3-9e98-a5511a4de32f')";
-            System.out.println(selectSql);
+//            System.out.println(selectSql);
             int i = statement.executeUpdate(selectSql);
 
             if (i > 0) {
