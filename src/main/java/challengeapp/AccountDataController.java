@@ -16,3 +16,9 @@ public class AccountDataController extends SceneController {
         switchTo(event, "profile");
     }
 }
+
+//TODO: Terug knop weg
+//TODO: Labels ipv textfields
+//TODO: verwijder account confirmatie
+//TODO: Account bewerken maken?
+//TODO: Symbolen linken

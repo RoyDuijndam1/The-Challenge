@@ -43,6 +43,8 @@ public class LoginController extends SceneController{
 
 }
 
+//TODO: Link maken met de database
+
 
 
 

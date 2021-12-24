@@ -16,15 +16,17 @@ public class ProfileController extends SceneController{
         switchTo(event, "profile");
     }
 
-    public void accountGegevensOnAction(MouseEvent event) throws IOException {
-        switchTo(event, "account_gegevens");
+    public void accountDataOnAction(MouseEvent event) throws IOException {
+        switchTo(event, "account_data");
     }
 
-    public void metingsGeschiedenisButtonOnAction(MouseEvent event) throws IOException {
-        switchTo(event, "metings_geschiedenis");
+    public void measurementHistoryButtonOnAction(MouseEvent event) throws IOException {
+        switchTo(event, "measurement_history");
     }
 
     public void contactButtonOnAction(MouseEvent event) throws IOException {
         switchTo(event, "contact");
     }
 }
+
+//TODO: Symbolen gelijk trekken
