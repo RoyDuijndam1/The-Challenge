@@ -16,6 +16,14 @@ public class RankingController extends SceneController{
     public void profileButtonOnAction(MouseEvent event) throws IOException {
         switchTo(event, "profile");
     }
+
+    public void regionaal(MouseEvent event) throws IOException {
+
+    }
+
+    public void nationaal(MouseEvent event) throws IOException {
+
+    }
 }
 
 //TODO: Regionaal en nationaal
