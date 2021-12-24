@@ -17,8 +17,8 @@ public class AccountDataController extends SceneController {
     }
 }
 
-//TODO: Terug knop weg
-//TODO: Labels ipv textfields
-//TODO: verwijder account confirmatie
-//TODO: Account bewerken maken?
+//TODO: Terug knop weg done
+//TODO: Labels ipv textfields done
+//TODO: verwijder account confirmatie done
+//TODO: Account bewerken maken? done
 //TODO: Symbolen linken
