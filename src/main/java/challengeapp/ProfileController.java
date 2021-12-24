@@ -29,4 +29,3 @@ public class ProfileController extends SceneController{
     }
 }
 
-//TODO: Symbolen gelijk trekken

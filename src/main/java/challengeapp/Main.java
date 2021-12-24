@@ -25,4 +25,3 @@ public class Main extends Application {
     }
 }
 
-//TODO: Dubbele pictures uit het programma halen
