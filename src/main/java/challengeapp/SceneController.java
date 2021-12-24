@@ -13,6 +13,8 @@ import java.util.Objects;
 
 public class SceneController {
 
+    String loginId = "";
+
     public void switchToHome(ActionEvent event, String target) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(target + ".fxml")));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -27,5 +29,9 @@ public class SceneController {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void setLoginId(String login) {
+        loginId = login;
     }
 }

@@ -29,7 +29,7 @@ public class LoginController extends SceneController{
 
     public void loginButtonOnAction(ActionEvent event) throws IOException {
 
-        System.out.println(sqlFuncties.loginFetch(usernameField.getText(), passwordField.getText())[0]);
+//        System.out.println(sqlFuncties.loginFetch(usernameField.getText(), passwordField.getText())[0]);
 
         if(usernameField.getText().isBlank() && passwordField.getText().isBlank()) {
             loginLabel.setText("No input detected");
@@ -40,9 +40,7 @@ public class LoginController extends SceneController{
         } else if(Objects.equals(usernameField.getText(), "banaan") && Objects.equals(passwordField.getText(), "appel")) {
             switchToHome(event, "home");
         }
-
     }
-
 }
 
 //TODO: Link maken met de database
