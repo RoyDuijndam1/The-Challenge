@@ -22,9 +22,9 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button layoutX="81.0" layoutY="174.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Accountgegevens" />
-            <Button layoutX="81.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Metinggschiedenis" />
-            <Button layoutX="81.0" layoutY="246.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Contact" />
+            <Button layoutX="81.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#accountDataOnAction" prefHeight="26.0" prefWidth="150.0" text="Accountgegevens" />
+            <Button layoutX="81.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#measurementHistoryButtonOnAction" prefHeight="26.0" prefWidth="150.0" text="Metinggschiedenis" />
+            <Button layoutX="81.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#contactButtonOnAction" prefHeight="26.0" prefWidth="150.0" text="Contact" />
             <ImageView fitHeight="56.0" fitWidth="87.0" layoutX="119.0" layoutY="536.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@pictures/homescreenresoize%20(1).png" />

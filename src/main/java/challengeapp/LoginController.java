@@ -29,17 +29,43 @@ public class LoginController extends SceneController{
 
     public void loginButtonOnAction(ActionEvent event) throws IOException {
 
-        System.out.println(sqlFuncties.loginFetch(usernameField.getText(), passwordField.getText())[0]);
+
 
         if(usernameField.getText().isBlank() && passwordField.getText().isBlank()) {
             loginLabel.setText("No input detected");
-        } else if(!Objects.equals(usernameField.getText(), "banaan")) {
-            loginLabel.setText("Username does not exist");
-        } else if(!Objects.equals(passwordField.getText(), "appel")) {
-            loginLabel.setText("Wrong password");
-        } else if(Objects.equals(usernameField.getText(), "banaan") && Objects.equals(passwordField.getText(), "appel")) {
-            switchToHome(event, "home");
+        } else {
+            if (usernameField.getText().isBlank()) {
+                loginLabel.setText("Please type your username");
+            } else if (passwordField.getText().isBlank()) {
+                loginLabel.setText("Please type your password");
+            } else {
+                String[] output = sqlFuncties.loginFetch(usernameField.getText(), passwordField.getText());
+
+                System.out.println(output[2]);
+
+                if (output[0] != null && output[1] != null && output[2] != null) {
+                    if (output[2].equals(usernameField.getText())) {
+                        switchToHome(event, "home");
+                    }
+                } else {
+                    loginLabel.setText("Username or password was incorrect");
+                    //ToDo dit uiteindelijk weghalen
+                    switchToHome(event, "home");
+                }
+            }
         }
+
+
+
+//        if(usernameField.getText().isBlank() && passwordField.getText().isBlank()) {
+//            loginLabel.setText("No input detected");
+//        } else if(!Objects.equals(usernameField.getText(), "banaan")) {
+//            loginLabel.setText("Username does not exist");
+//        } else if(!Objects.equals(passwordField.getText(), "appel")) {
+//            loginLabel.setText("Wrong password");
+//        } else if(Objects.equals(usernameField.getText(), "banaan") && Objects.equals(passwordField.getText(), "appel")) {
+//            switchToHome(event, "home");
+//        }
 
     }
 

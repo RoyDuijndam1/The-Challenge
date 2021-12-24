@@ -6,6 +6,9 @@ import java.util.Date;
 import java.util.UUID;
 
 public class sqlFuncties {
+    //TODO true = met DB. false = zonder DB
+    private static boolean DB = false;
+
     public static void Main(String[] args) {
         System.out.println("SQL file running");
 
@@ -49,7 +52,12 @@ public class sqlFuncties {
     }
 
     public static String[] loginFetch(String username, String password) {
-        String[] state = {"null", "null"};
+        String[] state = {"null", "null", "null"};
+
+        if (!DB) {
+            return state;
+        }
+
 
         //uuid gen plaatsen
         UUID uuid = UUID.randomUUID();
@@ -71,7 +79,7 @@ public class sqlFuncties {
              Statement statement = connection.createStatement();) {
 
             // Create and execute a SELECT SQL statement.
-            String selectSql = "SELECT `userID`, `naam` FROM `account` WHERE `username` = '"+username+"' AND `password` = '"+password+"'";
+            String selectSql = "SELECT `userID`, `naam`, `username` FROM `account` WHERE `username` = '"+username+"' AND `password` = '"+password+"'";
 //            System.out.println(selectSql);
             ResultSet rs = statement.executeQuery(selectSql);
 
@@ -90,6 +98,7 @@ public class sqlFuncties {
                 ;
                 state[0] = rs.getString("userID");
                 state[1] = rs.getString("naam");
+                state[2] = rs.getString("username");
             }
 
 //            if (rs > 0) {
