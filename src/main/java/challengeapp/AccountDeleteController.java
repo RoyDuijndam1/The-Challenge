@@ -3,7 +3,7 @@ package challengeapp;
 import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
-public class AccountEditController extends SceneController {
+public class AccountDeleteController extends SceneController {
     public void rankingButtonOnAction(MouseEvent event) throws IOException {
         switchTo(event, "ranking");
     }

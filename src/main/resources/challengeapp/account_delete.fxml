@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080 #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.AccountDeleteController">
+    <children>
+        <Label layoutX="86.0" layoutY="27.0" text="EnviQue" textFill="#76f26d">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="16.0" layoutY="524.0" onMouseClicked="#rankingButtonOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pictures/rankingtekentjetop3resize.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="119.0" layoutY="524.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pictures/homescreenresoize%20(1).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="62.0" fitWidth="76.0" layoutX="224.0" layoutY="524.0" onMouseClicked="#profileButtonOnAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pictures/userscreenresize.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="83.0" layoutY="188.0" mnemonicParsing="false" text="Ja" textFill="#ff3806" />
+        <Button layoutX="167.0" layoutY="188.0" mnemonicParsing="false" text="Nee" />
+        <Label layoutX="76.0" layoutY="101.0" text="Account verwijderen">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="98.0" layoutY="143.0" text="Weet u het zeker?" />
+    </children>
+</AnchorPane>
