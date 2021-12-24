@@ -46,7 +46,7 @@
             <Line endX="205.0" endY="-1.52587890625E-5" layoutX="95.0" layoutY="135.0" startX="-95.00001525878906" startY="-1.52587890625E-5" />
             <Label layoutX="120.0" layoutY="143.0" text="Leaderbord" />
             <Button layoutX="25.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#regionaalButtonOnAction" text="Regionaal" />
-            <Button layoutX="190.0" layoutY="171.0" mnemonicParsing="false" text="Nationaal" />
+            <Button layoutX="190.0" layoutY="171.0" mnemonicParsing="false" onMouseClicked="#nationaalButtonOnAction" text="Nationaal" />
             <Line endX="194.5999755859375" endY="-1.52587890625E-5" layoutX="107.0" layoutY="211.0" startX="-106.9999771118164" startY="-1.52587890625E-5" />
             <Label layoutX="43.0" layoutY="219.0" text="Rang:">
                <font>
@@ -109,50 +109,50 @@
                   <Font name="System Bold Italic" size="11.0" />
                </font>
             </Label>
-            <Label fx:id="firstPlaceScore" layoutX="208.0" layoutY="258.0" text="9.7">
+            <Label fx:id="firstPlaceScore" layoutX="208.0" layoutY="258.0">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label fx:id="secondPlaceScore" layoutX="210.0" layoutY="328.0" text="8.8">
+            <Label fx:id="secondPlaceScore" layoutX="210.0" layoutY="328.0">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="thirdPlaceScore" layoutX="210.0" layoutY="384.0" text="7.4">
+            <Label fx:id="thirdPlaceScore" layoutX="210.0" layoutY="384.0">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label fx:id="fourthPlaceScore" layoutX="212.0" layoutY="438.0" text="7.4" />
-            <Label fx:id="fifthPlaceScore" layoutX="212.0" layoutY="472.0" text="7.4" />
-            <Label fx:id="sixthPlaceScore" layoutX="212.0" layoutY="504.0" text="7.4" />
-            <Label fx:id="firstPlaceName" layoutX="68.0" layoutY="267.0" text="Banaan Appel">
+            <Label fx:id="fourthPlaceScore" layoutX="212.0" layoutY="438.0" />
+            <Label fx:id="fifthPlaceScore" layoutX="212.0" layoutY="472.0" />
+            <Label fx:id="sixthPlaceScore" layoutX="212.0" layoutY="504.0" />
+            <Label fx:id="firstPlaceName" layoutX="68.0" layoutY="267.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="secondPlaceName" layoutX="67.0" layoutY="337.0" text="Dirk Jan">
+            <Label fx:id="secondPlaceName" layoutX="67.0" layoutY="337.0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="thirdPlaceName" layoutX="70.0" layoutY="393.0" text="Dirk Jan">
+            <Label fx:id="thirdPlaceName" layoutX="70.0" layoutY="393.0">
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="fourthPlaceName" layoutX="60.0" layoutY="441.0" text="Dirk Jan">
+            <Label fx:id="fourthPlaceName" layoutX="60.0" layoutY="441.0">
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="fifthPlaceName" layoutX="60.0" layoutY="475.0" text="Dirk Jan">
+            <Label fx:id="fifthPlaceName" layoutX="60.0" layoutY="475.0">
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>
             </Label>
-            <Label fx:id="sixthPlaceName" layoutX="60.0" layoutY="507.0" text="Dirk Jan">
+            <Label fx:id="sixthPlaceName" layoutX="60.0" layoutY="507.0">
                <font>
                   <Font name="System Bold" size="10.0" />
                </font>

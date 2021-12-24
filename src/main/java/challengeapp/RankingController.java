@@ -34,7 +34,7 @@ public class RankingController extends SceneController{
     private Label sixthPlaceScore;
 
     public void initialize() {
-        getRegional();
+        getNational();
     }
 
     public void rankingButtonOnAction(MouseEvent event) throws IOException {
@@ -53,6 +53,10 @@ public class RankingController extends SceneController{
         getRegional();
     }
 
+    public void nationaalButtonOnAction(MouseEvent event) throws IOException {
+        getNational();
+    }
+
     public void getRegional() {
         String connectionString = "jdbc:mysql://127.0.0.1:3306/challenge";
         ResultSet resultSet = null;
@@ -63,6 +67,7 @@ public class RankingController extends SceneController{
             // Create and execute a SELECT SQL statement.
             String selectSql = "SELECT A.score, A.username\n" +
                     "FROM account A\n" +
+                    "WHERE A.woonplaats = \"Den Haag\"\n" +
                     "ORDER BY A.score DESC LIMIT 6";
             resultSet = statement.executeQuery(selectSql);
 
@@ -86,7 +91,6 @@ public class RankingController extends SceneController{
                 sixthPlaceName.setText(resultSet.getString(2));
                 sixthPlaceScore.setText(resultSet.getString(1));
 
-                //System.out.println(resultSet);
             }
         } catch (SQLException er) {
             er.printStackTrace();

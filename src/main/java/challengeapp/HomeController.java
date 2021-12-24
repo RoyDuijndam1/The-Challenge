@@ -41,6 +41,7 @@ public class HomeController extends SceneController{
     }
 
     public void rankingButtonOnAction(MouseEvent event) throws IOException {
+        System.out.println("hoi");
         switchTo(event, "ranking");
     }
 
