@@ -52,3 +52,5 @@ public class HomeController extends SceneController{
         switchTo(event, "profile");
     }
 }
+
+//TODO: overleggen extra content?

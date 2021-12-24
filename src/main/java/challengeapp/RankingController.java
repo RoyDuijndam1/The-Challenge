@@ -17,3 +17,6 @@ public class RankingController extends SceneController{
         switchTo(event, "profile");
     }
 }
+
+//TODO: Regionaal en nationaal
+//TODO: Link met database
