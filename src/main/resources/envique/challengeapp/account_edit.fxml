@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080 #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.AccountEditController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080 #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="envique.challengeapp.AccountEditController">
 <children>
     <Label layoutX="86.0" layoutY="27.0" text="EnviQue" textFill="#76f26d">
         <font>
@@ -38,11 +38,11 @@
     <Label layoutX="47.0" layoutY="233.0" text="Email:" />
     <Label layoutX="45.0" layoutY="278.0" text="Telefoon:" />
     <Label layoutX="46.0" layoutY="323.0" text="Woonplaats:" />
-    <Button layoutX="47.0" layoutY="424.0" mnemonicParsing="false" text="Verwijder account" textFill="#ff3806" />
-    <Button layoutX="46.0" layoutY="384.0" mnemonicParsing="false" text="Opslaan" />
-      <TextField layoutX="46.0" layoutY="250.0" prefHeight="26.0" prefWidth="218.0" />
-      <TextField layoutX="46.0" layoutY="295.0" prefHeight="26.0" prefWidth="218.0" />
-      <TextField layoutX="46.0" layoutY="340.0" prefHeight="26.0" prefWidth="218.0" />
+    <Button layoutX="47.0" layoutY="424.0" mnemonicParsing="false" onMouseClicked="#removeAccountOnAction" text="Verwijder account" textFill="#ff3806" />
+    <Button layoutX="46.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#saveButtonOnAction" text="Opslaan" />
+      <TextField fx:id="email" layoutX="46.0" layoutY="250.0" prefHeight="26.0" prefWidth="218.0" />
+      <TextField fx:id="phone" layoutX="46.0" layoutY="295.0" prefHeight="26.0" prefWidth="218.0" />
+      <TextField fx:id="city" layoutX="46.0" layoutY="340.0" prefHeight="26.0" prefWidth="218.0" />
       <Label layoutX="105.0" layoutY="209.0" text="Profielfoto wijzigen">
          <font>
             <Font size="11.0" />

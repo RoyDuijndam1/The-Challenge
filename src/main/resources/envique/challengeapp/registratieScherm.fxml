@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.RegistratieScherm">
+<AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.challengeapp.RegistratieScherm">
    <children>
       <Label layoutX="80.0" layoutY="14.0" text="EnviQue" textFill="#76f26d">
          <font>

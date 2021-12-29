@@ -1,15 +1,8 @@
-package challengeapp;
+package envique.challengeapp;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.*;
-import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.*;
-import java.util.Date;
-import java.util.UUID;
 
 public class CMD_reader extends Main {
 
@@ -80,8 +73,8 @@ public class CMD_reader extends Main {
     }
 
 
-    private static sqlFuncties sqlFile;
-    public CMD_reader(sqlFuncties sqlFile) {
+    private static DatabaseManager sqlFile;
+    public CMD_reader(DatabaseManager sqlFile) {
         this.sqlFile = sqlFile;
     }
 
@@ -127,7 +120,7 @@ public class CMD_reader extends Main {
                     }
 
 //                    System.out.println(sqlFuncties.insertIntoDB(values[0], values[1]));
-                    sqlFuncties.insertIntoDB(values[0], values[1]);
+                    DatabaseManager.insertIntoDB(values[0], values[1]);
                 }
             }
         };

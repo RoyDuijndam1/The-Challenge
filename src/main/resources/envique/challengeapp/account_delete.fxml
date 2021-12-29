@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080 #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeapp.AccountDeleteController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #808080 #808080;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="envique.challengeapp.AccountDeleteController">
     <children>
         <Label layoutX="86.0" layoutY="27.0" text="EnviQue" textFill="#76f26d">
             <font>
@@ -29,8 +29,8 @@
                 <Image url="@pictures/userscreenresize.png" />
             </image>
         </ImageView>
-        <Button layoutX="83.0" layoutY="188.0" mnemonicParsing="false" text="Ja" textFill="#ff3806" />
-        <Button layoutX="167.0" layoutY="188.0" mnemonicParsing="false" text="Nee" />
+        <Button layoutX="83.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#yesButtonOnAction" text="Ja" textFill="#ff3806" />
+        <Button layoutX="167.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#noButtonOnAction" text="Nee" />
         <Label layoutX="76.0" layoutY="101.0" text="Account verwijderen">
             <font>
                 <Font size="18.0" />
