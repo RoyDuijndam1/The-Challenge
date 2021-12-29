@@ -4,3 +4,5 @@
 
 # Build files
 /target/
+
+.DS_STORE
