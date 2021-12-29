@@ -1,10 +1,12 @@
-module sample.challengeapp {
+module envique.challengeapp {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.sql;
 
+    opens envique.challengeapp to javafx.fxml;
 
-    opens challengeapp to javafx.fxml;
-    exports challengeapp;
+    exports envique.challengeapp;
+    exports envique.challengeapp.model;
+    exports envique.challengeapp.exception;
 }
