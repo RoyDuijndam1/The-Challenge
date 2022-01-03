@@ -32,4 +32,6 @@ public class HomeController extends SceneController{
     }
 }
 
-//TODO: overleggen extra content?
+//TODO: overleggen extra content? Plaatje?
+//ToDo: auto update elke 15 min (dat code het ophaal) en bij de knop nu meten haalt hij de gegevens op (de sensor gaan we op 30 sec/1 min zetten)
+//ToDo: wanneer de gebruiker op de pagina komt al de score laten zien

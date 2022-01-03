@@ -13,7 +13,7 @@ import java.util.UUID;
 public class DatabaseManager {
     //TODO true = met DB. false = zonder DB
     private static boolean DB = true;
-    private static String connectionString = "jdbc:mysql://127.0.0.1:3306/challenge";
+    private static String connectionString = "jdbc:mysql://localhost:3306/challenge";
 
     public static boolean insertIntoDB(int tvoc, int eco2) {
         boolean state = false;

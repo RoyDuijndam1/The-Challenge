@@ -134,3 +134,5 @@ public class CMD_reader extends Main {
 //        System.out.println(insertIntoDB(values[0], values[1]));
     }
 }
+
+//ToDo: de gegevens ook naar een score opzetten met een AQI formule
