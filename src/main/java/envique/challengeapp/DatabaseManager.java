@@ -148,7 +148,7 @@ public class DatabaseManager {
 
     public static ArrayList<Measurement> getMeasurements() {
         try (Connection connection = DriverManager.getConnection(connectionString, "root", "");
-             PreparedStatement ps =  connection.prepareStatement("SELECT `CO2 waarde`, TVOC, `Datum meting` FROM meting WHERE userID = ? LIMIT 5"))
+             PreparedStatement ps =  connection.prepareStatement("SELECT `CO2 waarde`, TVOC, `Datum meting` FROM meting WHERE userID = ? ORDER BY `Datum meting` DESC  LIMIT 5"))
         {
             ps.setString(1, State.user.id);
             var resultSet = ps.executeQuery();
