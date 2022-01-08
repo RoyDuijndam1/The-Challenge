@@ -55,27 +55,66 @@ public class CMD_reader extends Main {
         }
     }
 
-    static int[] reverse(int a[], int n)
-    {
-        int[] b = new int[n];
-        int j = n;
-        for (int i = 0; i < n; i++) {
-            b[j - 1] = a[i];
-            j = j - 1;
-        }
-
-        // printing the reversed array
-//        System.out.println("Reversed array is: \n");
-//        for (int k = 0; k < n; k++) {
-//            System.out.println(b[k]);
+//    static int[] reverse(int a[], int n)
+//    {
+//        int[] b = new int[n];
+//        int j = n;
+//        for (int i = 0; i < n; i++) {
+//            b[j - 1] = a[i];
+//            j = j - 1;
 //        }
-        return b;
-    }
+//
+//        // printing the reversed array
+////        System.out.println("Reversed array is: \n");
+////        for (int k = 0; k < n; k++) {
+////            System.out.println(b[k]);
+////        }
+//        return b;
+//    }
 
 
     private static DatabaseManager sqlFile;
     public CMD_reader(DatabaseManager sqlFile) {
         this.sqlFile = sqlFile;
+    }
+
+    public static boolean isBetween(int x, int lower, int upper) {
+        return lower <= x && x <= upper;
+    }
+
+    public void updateScore(int eco2) {
+        int score = -1;
+        if (isBetween(eco2, 400, 500)) {
+            if (eco2 <450) {
+                score = 10;
+            } else {
+                score = 9;
+            }
+        } else if (isBetween(eco2, 501, 1000)) {
+            if (eco2 <550) {
+                score = 8;
+            } else {
+                score = 7;
+            }
+        } else if (isBetween(eco2, 1001, 2000)) {
+            if (eco2 <1500) {
+                score = 6;
+            } else {
+                score = 5;
+            }
+        } else if (isBetween(eco2, 2001, 5000)) {
+            if (eco2 <3500) {
+                score = 4;
+            } else {
+                score = 3;
+            }
+        } else if (isBetween(eco2, 5001, 999999999)) {
+            if (eco2 <40000) {
+                score = 2;
+            } else {
+                score = 1;
+            }
+        }
     }
 
     public static void main (String[] args) {
@@ -112,13 +151,19 @@ public class CMD_reader extends Main {
                         System.out.print(strArray[i] + ", \n");
 
                         String temp[] = strArray[i].split(" ");
-                        String temp2[] = temp[1].split("\\.");
+                        if (temp[1].toString().equals("Connection Lost")) {
+                            System.out.println("Sensor disconnected");
+                            sqlRun = false;
+                        } else {
+                            String temp2[] = temp[1].split("\\.");
 
 //                        System.out.println("after: "+Integer.valueOf(temp2[0]));
-                        values[teller] = Integer.valueOf(temp2[0]);
-                        teller++;
+                            values[teller] = Integer.valueOf(temp2[0]);
+                            teller++;
+                        }
                     }
 
+                    System.out.println(values[1]);
 //                    System.out.println(sqlFuncties.insertIntoDB(values[0], values[1]));
                     DatabaseManager.insertIntoDB(values[0], values[1]);
                 }
