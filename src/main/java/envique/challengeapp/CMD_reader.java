@@ -84,6 +84,7 @@ public class CMD_reader extends Main {
 
     public void updateScore(int eco2) {
         int score = -1;
+        //om de score te berekenen
         if (isBetween(eco2, 400, 500)) {
             if (eco2 <450) {
                 score = 10;
@@ -115,6 +116,8 @@ public class CMD_reader extends Main {
                 score = 1;
             }
         }
+
+
     }
 
     public static void main (String[] args) {
