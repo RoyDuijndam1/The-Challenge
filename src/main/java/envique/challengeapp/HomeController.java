@@ -1,5 +1,6 @@
 package envique.challengeapp;
 
+import envique.challengeapp.model.Measurement;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
-import java.sql.*;
+import java.util.ArrayList;
 
 public class HomeController extends SceneController{
     @FXML
@@ -16,6 +17,16 @@ public class HomeController extends SceneController{
     private Button nuMetenButton;
     @FXML
     void nuMetenButtonOnAction(ActionEvent event) {
+
+//        ArrayList<Measurement> measurements = DatabaseManager.getMeasurements();
+//        System.out.println(measurements.get(0).CO2);
+
+        // co2 waarde naar score omzetten
+
+        luchtScore.setText(String.valueOf(State.user.score));
+    }
+
+    public void initialize() {
         luchtScore.setText(String.valueOf(State.user.score));
     }
 

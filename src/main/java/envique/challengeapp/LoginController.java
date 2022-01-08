@@ -1,6 +1,7 @@
 package envique.challengeapp;
 
 import envique.challengeapp.exception.LoginException;
+import envique.challengeapp.model.Measurement;
 import envique.challengeapp.model.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class LoginController extends SceneController{
 
@@ -40,6 +42,11 @@ public class LoginController extends SceneController{
         try {
             User user = DatabaseManager.loginFetch(usernameField.getText(), passwordField.getText());
             State.saveUser(user);
+
+            //get measure info from user
+//            ArrayList<Measurement> measurements = DatabaseManager.getMeasurements();
+//            System.out.println(user.score);
+
             switchTo(event, "home");
 
         } catch (LoginException e) {
