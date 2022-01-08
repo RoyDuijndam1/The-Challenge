@@ -52,7 +52,7 @@ public class MeasurementHistoryController extends SceneController{
         var measurements = DatabaseManager.getMeasurements();
 
         for (int i = 0; i < measurements.size(); i++) {
-            table.get(i).date.setText(measurements.get(i).date.toString());
+            table.get(i).date.setText(measurements.get(i).date.toString().substring(0, 10));
             table.get(i).column1.setText(measurements.get(i).CO2);
             table.get(i).column2.setText(measurements.get(i).TVOC);
         }
