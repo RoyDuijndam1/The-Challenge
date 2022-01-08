@@ -1,0 +1,5 @@
+400 - 500 ppm 	green	Normal background concentration in outdoor ambient air
+500-1,000ppm	yellow	Concentrations typical of occupied indoor spaces with good air exchange
+1,000-2,000ppm	orange	Complaints of drowsiness and poor air.
+2,000-5,000 ppm	red	Headaches, sleepiness and stagnant, stale, stuffy air. Poor concentration, loss of attention, increased heart rate and slight nausea may also be present.
+>40,000 ppm	black	Exposure may lead to serious oxygen deprivation resulting in permanent brain damage, coma, even death.
