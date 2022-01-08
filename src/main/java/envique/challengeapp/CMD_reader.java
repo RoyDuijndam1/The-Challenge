@@ -126,7 +126,7 @@ public class CMD_reader extends Main {
         };
 
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(timerTask, 0, 15000);
+        timer.scheduleAtFixedRate(timerTask, 0, 900000);//1000 = 1sec, 15000 = 15sec, 900000 = 15 min
 
 //        timer.cancel();
 
